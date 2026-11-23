@@ -1,0 +1,22 @@
+﻿{
+    "answer":  "A voucher worth 50% of the shipping fee is given for an Express parcel arriving more than 24 hours after the promised time. You don\u0027t get your money back.",
+    "passages":  [
+                     {
+                         "text":  "Late delivery is not refunded. If an Express parcel arrives more than 24 hours after the promised time, you get a voucheâ¦",
+                         "rerankScore":  "n/a",
+                         "id":  "compensation-late"
+                     },
+                     {
+                         "text":  "To return a parcel to the sender before it is delivered, request \"Return to sender\" in the app. A return fee equal to thâ¦",
+                         "rerankScore":  "n/a",
+                         "id":  "returns-sender"
+                     },
+                     {
+                         "text":  "If your parcel arrives damaged, report it within 48 hours of delivery with photos of the box and the item. We refund theâ¦",
+                         "rerankScore":  "n/a",
+                         "id":  "refund-damaged"
+                     }
+                 ],
+    "latencyMs":  11691,
+    "mode":  "baseline"
+}

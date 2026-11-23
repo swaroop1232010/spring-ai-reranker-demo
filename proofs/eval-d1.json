@@ -1,0 +1,294 @@
+﻿{
+    "summary":  {
+                    "questions":  20,
+                    "baseline_top1":  "14/20 (70%)",
+                    "baseline_top3":  "18/20 (90%)",
+                    "reranked_top1":  "20/20 (100%)",
+                    "reranked_top3":  "20/20 (100%)",
+                    "baseline_avg_ms":  163,
+                    "reranked_avg_ms":  56020,
+                    "decision_calls_per_question":  15
+                },
+    "details":  [
+                    {
+                        "question":  "My Express package came a day and a half late, do I get my money back?",
+                        "expected":  "compensation-late",
+                        "baseline":  [
+                                         "compensation-late",
+                                         "returns-sender",
+                                         "refund-damaged"
+                                     ],
+                        "reranked":  [
+                                         "compensation-late",
+                                         "returns-ecommerce",
+                                         "returns-sender"
+                                     ]
+                    },
+                    {
+                        "question":  "The box was crushed and the mixer inside is broken. What do I do?",
+                        "expected":  "refund-damaged",
+                        "baseline":  [
+                                         "refund-damaged",
+                                         "returns-sender",
+                                         "delivery-attempts"
+                                     ],
+                        "reranked":  [
+                                         "refund-damaged",
+                                         "insurance",
+                                         "returns-sender"
+                                     ]
+                    },
+                    {
+                        "question":  "Tracking hasn\u0027t updated for almost two weeks. Will you pay me?",
+                        "expected":  "refund-lost",
+                        "baseline":  [
+                                         "refund-lost",
+                                         "pickup-reschedule",
+                                         "refund-damaged"
+                                     ],
+                        "reranked":  [
+                                         "refund-lost",
+                                         "compensation-late",
+                                         "delivery-attempts"
+                                     ]
+                    },
+                    {
+                        "question":  "I bought shoes on an online store and want to send them back. Can QuickParcel arrange it?",
+                        "expected":  "returns-ecommerce",
+                        "baseline":  [
+                                         "returns-ecommerce",
+                                         "returns-sender",
+                                         "refund-damaged"
+                                     ],
+                        "reranked":  [
+                                         "returns-ecommerce",
+                                         "returns-sender",
+                                         "delivery-attempts"
+                                     ]
+                    },
+                    {
+                        "question":  "I changed my mind, can I cancel the shipment and get the parcel back before it reaches the receiver?",
+                        "expected":  "returns-sender",
+                        "baseline":  [
+                                         "returns-sender",
+                                         "address-change",
+                                         "compensation-late"
+                                     ],
+                        "reranked":  [
+                                         "returns-sender",
+                                         "returns-ecommerce",
+                                         "delivery-attempts"
+                                     ]
+                    },
+                    {
+                        "question":  "Can the receiver pay for a â¹35,000 laptop when it arrives?",
+                        "expected":  "cod-limits",
+                        "baseline":  [
+                                         "cod-limits",
+                                         "pickup-reschedule",
+                                         "refund-lost"
+                                     ],
+                        "reranked":  [
+                                         "cod-limits",
+                                         "cod-remittance",
+                                         "insurance"
+                                     ]
+                    },
+                    {
+                        "question":  "When will I get the cash my customers paid the delivery boy?",
+                        "expected":  "cod-remittance",
+                        "baseline":  [
+                                         "cod-limits",
+                                         "compensation-late",
+                                         "refund-damaged"
+                                     ],
+                        "reranked":  [
+                                         "cod-remittance",
+                                         "pickup-schedule",
+                                         "refund-damaged"
+                                     ]
+                    },
+                    {
+                        "question":  "Can I send a spare power bank by itself?",
+                        "expected":  "prohibited-items",
+                        "baseline":  [
+                                         "prohibited-items",
+                                         "returns-sender",
+                                         "pickup-reschedule"
+                                     ],
+                        "reranked":  [
+                                         "prohibited-items",
+                                         "delivery-attempts",
+                                         "weight-disputes"
+                                     ]
+                    },
+                    {
+                        "question":  "Who pays the import tax when I send a gift to my sister in the US?",
+                        "expected":  "international-customs",
+                        "baseline":  [
+                                         "international-customs",
+                                         "returns-sender",
+                                         "cod-limits"
+                                     ],
+                        "reranked":  [
+                                         "international-customs",
+                                         "international-documents",
+                                         "weight-disputes"
+                                     ]
+                    },
+                    {
+                        "question":  "I\u0027m sending my degree certificates to a university in Canada. Do I need an invoice?",
+                        "expected":  "international-documents",
+                        "baseline":  [
+                                         "international-customs",
+                                         "international-documents",
+                                         "cod-limits"
+                                     ],
+                        "reranked":  [
+                                         "international-documents",
+                                         "international-customs",
+                                         "cod-limits"
+                                     ]
+                    },
+                    {
+                        "question":  "If I book at 4 in the evening, when will your person come to collect?",
+                        "expected":  "pickup-schedule",
+                        "baseline":  [
+                                         "pickup-schedule",
+                                         "pickup-reschedule",
+                                         "refund-damaged"
+                                     ],
+                        "reranked":  [
+                                         "pickup-schedule",
+                                         "delivery-attempts",
+                                         "pickup-reschedule"
+                                     ]
+                    },
+                    {
+                        "question":  "I wasn\u0027t home when the pickup guy came. Will I be charged?",
+                        "expected":  "pickup-reschedule",
+                        "baseline":  [
+                                         "pickup-schedule",
+                                         "pickup-reschedule",
+                                         "refund-damaged"
+                                     ],
+                        "reranked":  [
+                                         "pickup-reschedule",
+                                         "returns-ecommerce",
+                                         "compensation-late"
+                                     ]
+                    },
+                    {
+                        "question":  "Nobody was home for the last three delivery tries. Where is my parcel now?",
+                        "expected":  "delivery-attempts",
+                        "baseline":  [
+                                         "delivery-attempts",
+                                         "refund-lost",
+                                         "returns-sender"
+                                     ],
+                        "reranked":  [
+                                         "delivery-attempts",
+                                         "refund-lost",
+                                         "returns-ecommerce"
+                                     ]
+                    },
+                    {
+                        "question":  "Can I redirect my parcel from Hyderabad to Bengaluru?",
+                        "expected":  "address-change",
+                        "baseline":  [
+                                         "address-change",
+                                         "cod-limits",
+                                         "pickup-reschedule"
+                                     ],
+                        "reranked":  [
+                                         "address-change",
+                                         "returns-ecommerce",
+                                         "returns-sender"
+                                     ]
+                    },
+                    {
+                        "question":  "You charged me extra saying my box is heavier than I booked. I think it\u0027s wrong.",
+                        "expected":  "weight-disputes",
+                        "baseline":  [
+                                         "weight-disputes",
+                                         "compensation-late",
+                                         "refund-lost"
+                                     ],
+                        "reranked":  [
+                                         "weight-disputes",
+                                         "returns-ecommerce",
+                                         "international-documents"
+                                     ]
+                    },
+                    {
+                        "question":  "Is my â¹12,000 phone covered if it goes missing?",
+                        "expected":  "insurance",
+                        "baseline":  [
+                                         "refund-lost",
+                                         "insurance",
+                                         "pickup-reschedule"
+                                     ],
+                        "reranked":  [
+                                         "insurance",
+                                         "refund-lost",
+                                         "cod-limits"
+                                     ]
+                    },
+                    {
+                        "question":  "Does insurance pay out if the parcel is delivered three days late?",
+                        "expected":  "insurance",
+                        "baseline":  [
+                                         "compensation-late",
+                                         "refund-damaged",
+                                         "refund-lost"
+                                     ],
+                        "reranked":  [
+                                         "insurance",
+                                         "compensation-late",
+                                         "refund-lost"
+                                     ]
+                    },
+                    {
+                        "question":  "Can I pay cash on delivery for a parcel going to Dubai?",
+                        "expected":  "cod-limits",
+                        "baseline":  [
+                                         "cod-limits",
+                                         "international-customs",
+                                         "compensation-late"
+                                     ],
+                        "reranked":  [
+                                         "cod-limits",
+                                         "international-customs",
+                                         "weight-disputes"
+                                     ]
+                    },
+                    {
+                        "question":  "How much is deducted from my COD collections?",
+                        "expected":  "cod-remittance",
+                        "baseline":  [
+                                         "cod-remittance",
+                                         "cod-limits",
+                                         "insurance"
+                                     ],
+                        "reranked":  [
+                                         "cod-remittance",
+                                         "insurance",
+                                         "cod-limits"
+                                     ]
+                    },
+                    {
+                        "question":  "Can I ship a 1 litre bottle of coconut oil?",
+                        "expected":  "prohibited-items",
+                        "baseline":  [
+                                         "cod-limits",
+                                         "prohibited-items",
+                                         "international-documents"
+                                     ],
+                        "reranked":  [
+                                         "prohibited-items",
+                                         "international-documents",
+                                         "international-customs"
+                                     ]
+                    }
+                ]
+}

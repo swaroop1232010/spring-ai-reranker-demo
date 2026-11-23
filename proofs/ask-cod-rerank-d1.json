@@ -1,0 +1,22 @@
+﻿{
+    "mode":  "rerank",
+    "latencyMs":  68642,
+    "passages":  [
+                     {
+                         "id":  "cod-remittance",
+                         "rerankScore":  0.7618424714593449,
+                         "text":  "For business accounts, COD amounts collected from receivers are transferred to the sender\u0027s bank account every Tuesday aâ¦"
+                     },
+                     {
+                         "id":  "pickup-schedule",
+                         "rerankScore":  0.13370900163729824,
+                         "text":  "Pickups booked before 2 PM are collected the same day. Pickups booked after 2 PM, on Sundays or on public holidays are câ¦"
+                     },
+                     {
+                         "id":  "refund-damaged",
+                         "rerankScore":  0.0688228509616802,
+                         "text":  "If your parcel arrives damaged, report it within 48 hours of delivery with photos of the box and the item. We refund theâ¦"
+                     }
+                 ],
+    "answer":  "COD amounts collected from receivers are transferred to the sender\u0027s bank account every Tuesday and Friday, minus a 1.5% handling charge."
+}

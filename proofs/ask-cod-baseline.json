@@ -1,0 +1,22 @@
+﻿{
+    "mode":  "baseline",
+    "latencyMs":  20773,
+    "passages":  [
+                     {
+                         "id":  "cod-limits",
+                         "rerankScore":  "n/a",
+                         "text":  "Cash on Delivery is available for parcels with a declared value up to â¹20,000. The receiver can pay in cash or by UPI toâ¦"
+                     },
+                     {
+                         "id":  "compensation-late",
+                         "rerankScore":  "n/a",
+                         "text":  "Late delivery is not refunded. If an Express parcel arrives more than 24 hours after the promised time, you get a voucheâ¦"
+                     },
+                     {
+                         "id":  "refund-damaged",
+                         "rerankScore":  "n/a",
+                         "text":  "If your parcel arrives damaged, report it within 48 hours of delivery with photos of the box and the item. We refund theâ¦"
+                     }
+                 ],
+    "answer":  "Cash on Delivery is available for parcels with a declared value up to â¹20,000. The receiver can pay in cash or by UPI to the delivery partner. Therefore, the customers will get the cash they paid to the delivery boy if they choose to pay in cash upon receiving the parcel."
+}

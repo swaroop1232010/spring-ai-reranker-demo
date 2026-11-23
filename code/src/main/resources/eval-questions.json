@@ -1,0 +1,22 @@
+[
+  {"question": "My Express package came a day and a half late, do I get my money back?", "expected": "compensation-late"},
+  {"question": "The box was crushed and the mixer inside is broken. What do I do?", "expected": "refund-damaged"},
+  {"question": "Tracking hasn't updated for almost two weeks. Will you pay me?", "expected": "refund-lost"},
+  {"question": "I bought shoes on an online store and want to send them back. Can QuickParcel arrange it?", "expected": "returns-ecommerce"},
+  {"question": "I changed my mind, can I cancel the shipment and get the parcel back before it reaches the receiver?", "expected": "returns-sender"},
+  {"question": "Can the receiver pay for a ₹35,000 laptop when it arrives?", "expected": "cod-limits"},
+  {"question": "When will I get the cash my customers paid the delivery boy?", "expected": "cod-remittance"},
+  {"question": "Can I send a spare power bank by itself?", "expected": "prohibited-items"},
+  {"question": "Who pays the import tax when I send a gift to my sister in the US?", "expected": "international-customs"},
+  {"question": "I'm sending my degree certificates to a university in Canada. Do I need an invoice?", "expected": "international-documents"},
+  {"question": "If I book at 4 in the evening, when will your person come to collect?", "expected": "pickup-schedule"},
+  {"question": "I wasn't home when the pickup guy came. Will I be charged?", "expected": "pickup-reschedule"},
+  {"question": "Nobody was home for the last three delivery tries. Where is my parcel now?", "expected": "delivery-attempts"},
+  {"question": "Can I redirect my parcel from Hyderabad to Bengaluru?", "expected": "address-change"},
+  {"question": "You charged me extra saying my box is heavier than I booked. I think it's wrong.", "expected": "weight-disputes"},
+  {"question": "Is my ₹12,000 phone covered if it goes missing?", "expected": "insurance"},
+  {"question": "Does insurance pay out if the parcel is delivered three days late?", "expected": "insurance"},
+  {"question": "Can I pay cash on delivery for a parcel going to Dubai?", "expected": "cod-limits"},
+  {"question": "How much is deducted from my COD collections?", "expected": "cod-remittance"},
+  {"question": "Can I ship a 1 litre bottle of coconut oil?", "expected": "prohibited-items"}
+]

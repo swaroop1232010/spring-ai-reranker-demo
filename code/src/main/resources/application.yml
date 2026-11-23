@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: rag-decision-reranker
+  datasource:
+    url: jdbc:postgresql://localhost:5433/rag
+    username: postgres
+    password: postgres
+  ai:
+    # Everything runs locally with Ollama (>= 0.40.4) — no API key, no cost.
+    model:
+      chat: ollama
+      embedding: ollama
+      decision: ollama
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: qwen2.5:3b          # answers the user
+      embedding:
+        model: nomic-embed-text    # 768-dim embeddings for pgvector
+      decision:
+        model: d1                  # 2.7B decision model; d1-omni:600m is faster but much less accurate here
+      init:
+        pull-model-strategy: when_missing   # download the models on first start
+        timeout: 15m
+    vectorstore:
+      pgvector:
+        initialize-schema: true    # creates the vector_store table + extensions on first run
+        dimensions: 768            # must match the embedding model
+        index-type: HNSW
+        distance-type: COSINE_DISTANCE

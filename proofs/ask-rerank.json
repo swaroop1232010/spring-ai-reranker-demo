@@ -1,0 +1,22 @@
+﻿{
+    "answer":  "You don\u0027t get your money back for a late Express package, as you only get a voucher worth 50% of the shipping fee. Standard parcels have no late-delivery compensation.",
+    "passages":  [
+                     {
+                         "text":  "Late delivery is not refunded. If an Express parcel arrives more than 24 hours after the promised time, you get a voucheâ¦",
+                         "rerankScore":  0.18542070966435376,
+                         "id":  "compensation-late"
+                     },
+                     {
+                         "text":  "Returns of online-store orders are handled by the store, not by QuickParcel. We only carry the return parcel once the stâ¦",
+                         "rerankScore":  0.08381666413616784,
+                         "id":  "returns-ecommerce"
+                     },
+                     {
+                         "text":  "If the weight we measure at the hub is higher than the booked weight, the difference is charged to the sender\u0027s wallet. â¦",
+                         "rerankScore":  0.06307739907218175,
+                         "id":  "weight-disputes"
+                     }
+                 ],
+    "latencyMs":  16037,
+    "mode":  "rerank"
+}
