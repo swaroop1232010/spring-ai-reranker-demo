@@ -34,4 +34,4 @@ Invoke-RestMethod -Method Post http://localhost:8080/eval -TimeoutSec 3600 | Con
 
 ## Article
 
-The full write-up is on Medium: *I Tested Spring AI 2.1's New Reranker Locally. The Small Model Made My RAG Worse.*
+The full write-up is on Medium: [I Tested Spring AI 2.1's New Reranker Locally. The Small Model Made My RAG Worse.](https://medium.com/@swaroop1232010/i-tested-spring-ai-2-1s-new-reranker-locally-the-small-model-made-my-rag-worse-ff970ce0de65)
